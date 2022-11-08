@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Classes e ID`s</title>
+   <!--
+      Deixamos nosso site mais profissional e bem estruturado
+     utilizando a tag <div> onde podemos aplicar nossas forma-
+     tacões utilizando ID`s e Classes.
+   -->
+   <style type="text/css">
+       #topo {
+         background: blue;
+       }
+
+       #conteudo {
+         background: green;
+         padding: 1px;
+       }
+
+       #rodape {
+         background: red;
+       }
+
+       #assinatura {
+         background: pink;
+       }
+
+       .produto {
+         background: gray;
+         margin: 10px;
+       }
+
+       .amarelo {
+         background:yellow;
+       }
+   </style
+ </head>
+  <body>
+    <div id="topo">
+        <img src="img/imagem.png" width="200">
+        <ul>
+            <li>Home</li>
+            <li>Produto</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <div id="conteudo">
+    <!--
+      A Tag <div> ela toma totalmente o espaco da linha, se quisermos agruparmos
+     conteúdos um ao lado do outro útilizamos a tag <span>. A  tag  <div> é  uma
+     block-line por ocupar o bloco completo, já há <span> é
+    -->
+
+        <span class="produto">
+            Produto 1
+        </span>
+
+        <span class="produto">
+            Produto 2
+        </span>
+
+        <span class="produto">
+            Produto 3
+        </span>
+    </div>
+
+    <div id="rodape">
+        <p align="center">Todos Os <span class="amarelo">direitos</span> Reservados.</p>
+    </div>
+    <p align="center">
+        <span id="assinatura">
+            Italo Correia
+        </span>
+    </p>
+ </body>
+</html>

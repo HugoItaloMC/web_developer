@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cor e Imagem de Fundo</title>
+  <!--
+   background-color -> Definimos uma cor de fundo ao container
+
+   background-image -> url('pPathDaImagem') -> Passamos uma imagem de fundo
+
+   background-repeat -> Quantas vezes a imagem de fundo deve repetir
+     no-repeat : Imagem de fundo vai aparecer 1 vez
+     repeat-x : Eixo horizontal
+     repeat-y : Eixo Vertical
+
+   background-attachment -> Defini a dinâmica da imagem
+     fixed : Mesmo se fizermos roll's na página a imagem fica fixa
+     scroll : A imagem acompnha conforme há pagina se movimenta
+
+   background-position -> Define uma posicão para imagem de fundo podemos
+  passar 2 parametros
+     center : Imagem fica centralizada
+     left : Imagem a esquerda
+     right : Imagem a Direita
+     top : Imagem vai para o topo da página
+     botoom : Imagem vai para o final da págica
+
+   background -> podemos passar uma cor de fundo uma imagem, posiciona-
+   mento e attachment na mesma declaracão
+  -->
+      <style type="text/css">
+          body {
+            /*background-image: url('img/yoshi.png');*/
+            background-repeat: repeat-X;
+            background-attachment: schroll;
+          }
+
+          .fundo{
+            font-size: 48px;
+            background: url('img/yoshi.png') blue no-repeat scroll center top;
+            color: white;
+          }
+      </style
+</head>
+<body>
+<!--
+
+-->
+
+<p class="fundo">
+    Conteúdo 1
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    conteudo 2
+</p>
+
+</body>
+</html>

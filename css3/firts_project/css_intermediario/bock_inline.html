@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 
+      Block -> São tags que sua caixa ocupa todo o espaco disponível
+    na págica e são alinhados um abaixo do outro.
+      
+      Inlie -> São Caixas que ocupam somente o seu  valor conforme o 
+     seu conteúdo e são alinhnados um ao lado do outro.
+       
+       Inline-Block -> São elementos que ocupam somente o seu valor
+      conforme seu conteúdo porém são alinhados um ao lado do outro
+      
+      Podemos alterar o comportamento de uma tag utilizando a pro-
+     priedade 'display'.
+     -->
+    <meta charset="UTF-8">
+    <title>Entendendo - Block, Inline, inline-block</title>
+    <style type="text/css">
+       .borda{
+         border: 1px solid red;
+         display: inline-block;
+       }
+    
+    </style>
+  </head>
+  
+  <body>
+    <h1 class="borda">Bloco 1 </h1>
+    <h1 class="borda">Bloco 2</h1>
+    
+    <span class="borda">Conteúdo 1</span>
+    <span class="borda">Conteúdo 2 </span>
+  </body>
+</html>

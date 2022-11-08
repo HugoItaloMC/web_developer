@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elementos Flutuantes</title>
+    <style type="text/css">
+     
+     
+     /*
+       Ao utilizarmos float o elemento sai do fluxo
+     padrão do navegador e passa a  ser um elemento
+     no fluxo flutuante  e assim  podendo ficar por
+     de outros  elementos  que está no fluxo padrão
+     do arquivo,  do  contrário quando elementos se
+     encontram no mesmo fluxo eles repeitam o limi-
+     te de espacamento do elemento vizinho.
+         
+     .conteudo1{
+        background: red;
+        border: 1px solid gray; 
+        width: 150px;
+        height: 150px; 
+        float: left;
+     }*/
+      
+      
+      /*
+        Para limparmos o fluxo dos elementos flutuantes
+      fazendo com que os mesmos ñ interfiram  em outros
+      elementos com fluxo diferente,  temos  que limpar
+      o fluxo atribuindo  uma  propriedade  ao elemento 
+      após os elementos com fluxo flutuante o mesmo va-
+      le para atribuirmos um background ou border sobre
+      os elementos flutuantesn.
+       Os containers principais ao atribuirmos um clear
+     vai se expandir até sobrepor os elementos flutuan-
+     tes 
+      */
+     #principal{
+       background: green;
+       border: 5px solid red;
+     }
+     
+     .conteudo{
+        background: blue;
+        border: 1px solid gray; 
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        float: right; 
+     }    
+      .clear{
+          clear: both;
+      }
+    </style>
+  </head>  
+  
+  <body>
+  
+   <div id="principal"> 
+     
+     <div class="conteudo">Conteudo 1</div>
+   
+     <div class="conteudo">Conteudo 2</div>
+   
+     <div class="conteudo">Conteudo 3</div> 
+  
+     <p class="clear">
+        "On the other hand, we denounce with righteous indignation and dislike 
+       men who are so beguiled and demoralized by the  charms  of pleasure  of 
+       the moment, so blinded by desire, that they cannot foresee the pain and 
+       trouble that are bound to ensue; and equal blame  belongs  to those who 
+       fail in their duty through weakness of will, which is the same as saying 
+       through shrinking from toil and pain. These  cases  are perfectly simple   
+       and easy to distinguish. In a free  hour,  when  our power  of choice is 
+       untrammelled and when nothing prevents our being able to do what we like 
+       best, every pleasure is to  be welcomed  and every  pain avoided. But in 
+       certain circumstances and owing to the claims of duty or the obligations 
+       of business it will frequently occur that pleasures have to be repudiated 
+       and annoyances  accepted. The  wise man  therefore always  holds in these 
+       matters to this  principle  of selection:  he rejects pleasures to secure 
+       other greater pleasures, or else he endures pains to avoid worse pains."
+     </p>
+     <!--<div class="principal"></div>--> 
+   
+   </div>
+
+  </body>
+</html>

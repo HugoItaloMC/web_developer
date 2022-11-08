@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Formatando Link`s</title>
+  
+   <style type="text/css">
+   
+      /*
+        Link`s contém estados diferente de hipertextos
+         
+         visited : O usuário já visitou(clicou) no link
+         
+         link : Que o usuário ainda ñ clicou
+         
+         hover : Quando vc passa o cursor do mouse sobre o link
+         
+         active : Quando o usuário clica e mantém presionado o
+        link.
+       
+       Por convencão ñ modificamos link`s visitados e ñ visitados
+      mantemos a mesma cor em ambos, só alteramos os demais.   
+      */
+      
+      /*Não visitados*/
+      
+      a{
+       padding: 5px 10px;
+       text-decoration: none;
+      }
+     /*Visitados e Ñ visitados*/ 
+      a:link, a:visited {
+        color: #b9c941;
+      }     
+      
+      /* hover*/
+      a:hover{
+        color: #FFF ;
+        background: #6d790f;
+      }
+      
+      /*  active*/
+      a:active{
+        color: #e4f371;
+      }
+   </style>
+  </head>
+  
+  <body>
+     <a href="https://www.google.com.br">clique Aqui</a> |
+     <a href="https://www.tecmundo.com.br">	Tecmundo</a> |
+     <a href="https://www.megacurioso.com.br">	MegaCurioso</a> |
+  </body>
+</html>

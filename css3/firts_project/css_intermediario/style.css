@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#noticia {
+	
+	background: #f9f9f9;
+	padding: 10px;
+	border: 1px solid gray;	
+}
+
+
+h2 {	
+	margin: 0px;	
+}
+/*
+  Modelo de Caixa (Box Movel)
+
+
+
+
+.conteudo{
+	
+	border: solid red;
+
+	padding-top: 10px;
+	padding-right: 20px;
+    padding-bottom: 20px;
+    pedding-left: 20px; 
+     
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+     Podemos declarar espacamentos internos
+   ou externos na mesma linha  
+     
+     
+     Margin Collapse é o fenomeno que ocorre
+   quando temoss dois  elementos com margens 
+   diferentes o elemento  com a maior margem
+   vai sobre-escrever a margen com menor es-
+   pacamento.    
+
+	margin: 20px 20px 20px 20px;
+    
+    padding: 20px 15px 10px 5px;
+    	
+	width: 150px;	
+} */

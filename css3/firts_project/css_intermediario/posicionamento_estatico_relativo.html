@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Posicionamento (Static, relative, absolute e fixed)</title>
+    
+    <!-- 
+      Por padrão a posicão dos elementos HTML 
+     é estática, podemos alterar esse compor-
+     tamento com a propriedade 'position' de-
+     clarando qual comportamento a tag deve
+     ter (static, relative, absolute, fixed)
+     
+      static:
+        
+      relative:
+        Tem o seu posicionamento baseado na posicão
+       inicial do seu elemento
+      
+      absolute:
+        Ele permite que vc defina uma caixa que é removida
+       do fluxo do documento e vc consegue alinhas essa
+       caixa no seu container que tenha uma posicão
+      
+      
+      fixed:
+        Ele é alinhado na tela, na janela do seu navegador.
+      
+     -->
+    <style type="text/css">
+         /*
+            Ao utilizarmos um posicionamento
+          'position: (...);' devemos atribuir 4
+          atributos sendo eles (top, right, left, bottom)
+            Conforme cada atributo declarado.
+             
+         */
+      
+      body {
+        background: #007fc7;
+      }
+      
+      h1{ 
+         position: static;
+      }
+      
+      
+      p{
+        width: 300px;
+      }
+      
+      #container{
+        background: #FFF;
+        width: 800px;
+        margin: 10px auto;
+        padding: 10px;
+        float: top;
+      }
+      
+      .fixed {
+        border: 1px solid red;
+        background: #f2f2f2;
+        margin: 0px;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        
+      }
+      
+      .absolute{
+        border: 1px solid red;
+        background: #f2f2f2;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      
+      .relative {
+         border: 1px solid red;
+         position: relative;
+         margin: 0px;
+         top: 20px;
+         right: 10px;
+         left: 10px;
+         bottom: 20px;
+      }
+    </style>
+  </head>
+  
+  <body>
+   <div id="container">
+   	<h1>posicionamento</h1>
+   	<p>
+   	 P1- Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>   
+    
+    <p class="fixed">
+   	 P2- Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>   
+   	 
+   	 <p>
+   	 P3-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>
+   	 <p>
+   	 P3-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>
+   	 <p>
+   	 P3-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>
+   	 <p>
+   	 P3-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>
+   	 <p>
+   	 P3-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+   	Eum  distinctio  natus doloribus dicta quibusdam molestiae 
+   	voluptates  explicabo  modi  magni  dolorum  facere illum 
+   	laborum   placeat  vel  libero  voluptatibus  repudiandae 
+   	deleniti qui.
+   	</p>
+   
+   </div>
+  </body>  
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <title>Sobrepondo Elementos</title>
+    <style type="text/css">
+    
+    /*
+      Para definirmos qual conteúdo vai sobrepor
+     o outro, utilizamos a propriedade x-index
+     passando como valor um número, o elemento
+     que conter o maior número será o que apa-
+     recerá em primeiro. Caso o valor seja igual
+     a ordem de exibicão vai ser a padrão do do-
+     cumento. O z-index também é conhecido como
+     contexto de empilhamento
+    */
+    
+    .conteudo{
+      border: 1px solid red;
+      background: orange;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .conteudo2{
+      border: 1px solid red;
+      background: green;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+      z-index: 0;
+    }
+       .conteudo3{
+      border: 1px solid red;
+      background: yellow;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+      z-index: 0;
+    }
+    
+    </style>
+  </head>
+  
+  <body>
+  
+   <div class="conteudo">conteudo 1</div>
+   <div class="conteudo2">conteudo 2</div>
+   <div class="conteudo3">conteudo 3</div>
+  
+  </body>  
+</html>

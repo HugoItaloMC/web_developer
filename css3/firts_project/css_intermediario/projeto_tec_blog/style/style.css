@@ -10,6 +10,7 @@
 body {
 	font-size: 1em;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
 }
 
 /*
@@ -24,8 +25,7 @@ body {
 }
 
 #area_logo, #area_menu {
-	  padding: 10px;
-	
+	  padding: 10px;	
 }
 
 
@@ -35,9 +35,6 @@ body {
 	padding: 15px;
 }
 
-#area_lateral {	
-	background: orange;
-}
 
 #area_postagens {
 	width: 660px;
@@ -58,7 +55,17 @@ body {
   background: #CCC;	
 }
 
+.conteudo_lateral{
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
 
+.postagem_lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
 .postagem{
 	
 	padding: 20px;
@@ -77,9 +84,9 @@ a{
 }
 
  a:hover {
-    padding: 8px 12px;
-    margin-top: 5px;
-   text-decoration: underline;
+    padding: 1px 1.5px;
+    margin-top: 0.5px;
+    text-decoration: underline;
 }
 
 #area_cabecalho a:link, #area_cabecalho a:visited {
@@ -106,6 +113,13 @@ h1 {
 h2 {
 	color: f7b600;
 }
+
+h3 {
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+	margin: 2px;
+}
 .branco{
 	color: white;
 }
@@ -115,6 +129,5 @@ h2 {
 	border-bottom: 1px solid #f4f4f4;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
-	display: block;
-	
+	display: block;	
 }
